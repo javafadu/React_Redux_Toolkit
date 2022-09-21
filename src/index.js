@@ -1,21 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {Provider as ContextProvider} from "react-redux";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider as ContextProvider } from "react-redux";
 import store from "./store";
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css";
+import "flag-icons/css/flag-icons.min.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-
     <ContextProvider store={store}>
-      <App/>
+      <App />
     </ContextProvider>
-
-</React.StrictMode>
-
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
