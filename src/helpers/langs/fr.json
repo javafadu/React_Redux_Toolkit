@@ -1,5 +1,5 @@
 {
-    "hello world": "Bonjour le monde",
-    "dark-mode" : "Mode Sombre",
-    "light-mode" : "Mode jour"
+    "hello-world": "Hola Mundo",
+    "dark-mode": "Modo Oscuro",
+    "light-mode": "Modo Claro"
 }

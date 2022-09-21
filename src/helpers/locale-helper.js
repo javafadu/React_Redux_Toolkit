@@ -17,4 +17,11 @@ const setCurrentlang = (code) => {
   store.dispatch(setLang(code));
 };
 
-export { langs, getCurrentLang, setCurrentlang };
+const $lng = (key) => {
+  const currentLangCode = store.getState().locale.lang;
+  const langFile = require(`../helpers/langs/${currentLangCode}.json`);
+
+  return langFile[key];
+};
+
+export { langs, getCurrentLang, setCurrentlang, $lng };
